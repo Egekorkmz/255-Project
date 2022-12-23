@@ -1,6 +1,7 @@
 html{
     background-color: #AF7AC5;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .main{
@@ -23,4 +24,39 @@ html{
     padding: 10px;
     display: flex;
     color: aliceblue;
+}
+
+.words{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row div{
+    display: flex;
+    visibility: hidden;
+    margin: 5px;
+    height: 50px; width: 50px;
+    background-color: #AF7AC5;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.letter :first-child{
+    height: 60px;
+}
+
+.widget{
+    display: flex;
+    height: 350px; width: 350px;
+    margin: auto; margin-top: 20px;
+    border-radius: 50%;
+    background-color: #AF7AC5;
 }
