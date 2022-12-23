@@ -8,4 +8,4 @@ var words = [{id:"02" , value: 'V'}, {id:"03" , value: 'A'}, {id:"04" , value:'T
 
 var word = ["vat", "vote", "metal", "art", "age", "pause"]
 
-var letter = ['V', 'A', 'T', 'O', 'E', 'R', 'M', 'L', 'G', 'P', 'U', 'S'];
+var letter = ["V", "A", "T", "O", "E", "R", "M", "L", "G", "P", "U", "S"];

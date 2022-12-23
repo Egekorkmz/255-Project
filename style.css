@@ -47,6 +47,7 @@ html{
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+    content-visibility: hidden;
 }
 
 .letter :first-child{
@@ -54,9 +55,22 @@ html{
 }
 
 .widget{
+    position:relative;
     display: flex;
     height: 350px; width: 350px;
     margin: auto; margin-top: 20px;
     border-radius: 50%;
     background-color: #AF7AC5;
+    padding: 0px;
+}
+
+.widget div{
+    position: absolute;
+    display: flex;
+    margin: 0px;
+    height: 60px; width: 60px;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
 }
