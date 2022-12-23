@@ -1,0 +1,26 @@
+html{
+    background-color: #AF7AC5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    display: flex;
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px; width: 450px;
+    margin: auto; margin-top: 30px;
+    flex-direction: column;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    padding: 10px;
+    display: flex;
+    color: aliceblue;
+}
