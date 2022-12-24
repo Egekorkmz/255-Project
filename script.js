@@ -47,7 +47,8 @@ $(function(){
 
     $("#widget").children().each(function(){
         $(this).click(function(){
-            var temp = $(this).css("background-color", "red").text();
+            var temp = $(this).text();
+            $(this).animate({backgroundColor: "aliceblue"});
             if(temp !== "")
                 $("#word").append(temp).css("visibility", "visible");
         })
@@ -67,8 +68,8 @@ $(function(){
             $(`#${i}`).text(`${letter[number]}`)
             number = Math.floor(Math.random()*letter.length)
         }
-
-        $("#widget").children().each(function(){$(this).css("background-color", "aliceblue")})
+        $(this).css("background-color" , "aliceblue")
+        $("#widget").children().not("#shuffle").each(function(){$(this).animate({backgroundColor: "#AF7AC5"})})
         $("#word").text("").css("visibility", "hidden")
     })
 })
