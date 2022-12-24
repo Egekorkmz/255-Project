@@ -76,3 +76,28 @@ html{
     font-weight: bold;
     background-color: aliceblue;
 }
+.widget #shuffle{
+    position: absolute;
+    left:145px; bottom: 145px;
+    display: flex;
+    margin: 0px;
+    height: 60px; width: 60px;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.word {
+    margin: auto; margin-top: 30px;
+    display: flex;
+    height: 60px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 40px;
+    border-radius: 60px;
+    visibility: hidden;
+    background-color: #AF7AC5;
+}
