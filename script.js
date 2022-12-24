@@ -24,33 +24,30 @@ $(function(){
     }
 
     str = "";
-    var char;
-
+    var number = Math.floor(Math.random()*letter.length);
+    var arr = new Array();
+    //create letters
     for(var i = 0; i < 6; i++){
         
-        do{
-            char = letter[Math.floor(Math.random()*letter.length)]
-        }while(isExist(char));
-
-        str += `<div id = "${i}">${char}</div>`
+        for(let i = 0; i < arr.length; i++){
+            console.log(arr[i] + " " + number);
+            while(number === arr[i]){
+                number = Math.floor(Math.random()*letter.length);
+                i = 0;
+                console.log("its working")
+            }   
+        }
+        arr.push(number);
+        str += `<div id = "${i}">${letter[number]}</div>`
+        number = Math.floor(Math.random()*letter.length);
+        
+        
     }
-    $("#widget").html(str);
+    $("#widget").html(str); 1
     
+    //positionings
     for(var i = 0; i < 6; i++){
         $(`#${i}`).css({"left" : `${145+ Math.cos(convert(60-60*i))*100}px`, "bottom" : `${145 +Math.sin(convert(60-60*i))*100}px`});
     }
     
-    function isExist(char){
-        $("#widget").children().each(function(){
-            console.log($(this));
-        });
-        console.log(index);
-        for(var i = 0; i < index.length; i++){
-            if(char === index[i].text()){
-                console.log("lel");
-                return true;
-            }   
-        }
-        return false;
-    }
 })
