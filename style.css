@@ -71,30 +71,23 @@ html{
     height: 60px; width: 60px;
     border-radius: 50%;
     font-size: 40px;
-    align-items: center;
-    justify-content: center;
+    align-items: center; justify-content: center;
     font-weight: bold;
+    cursor :pointer;
+    user-select: none;
 }
 .widget #shuffle{
     position: absolute;
     left:145px; bottom: 145px;
-    display: flex;
-    margin: 0px;
-    height: 60px; width: 60px;
-    border-radius: 50%;
-    font-size: 40px;
-    align-items: center;
-    justify-content: center;
     background-color: aliceblue;
+    
 }
 
 .word {
-    margin: auto; margin-top: 30px;
     display: flex;
-    height: 60px;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
+    height: 60px; width: fit-content;
+    margin: auto; margin-top: 30px;
+    justify-content: center; align-items: center;
     padding: 10px 30px;
     font-size: 40px;
     border-radius: 60px;
