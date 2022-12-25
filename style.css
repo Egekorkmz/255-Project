@@ -18,6 +18,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .header{
@@ -58,7 +59,7 @@ html{
     position:relative;
     display: flex;
     height: 350px; width: 350px;
-    margin: auto; margin-top: 20px;
+    margin: auto; margin-top: 40px;
     border-radius: 50%;
     background-color: #AF7AC5;
     padding: 0px;
@@ -79,18 +80,56 @@ html{
 .widget #shuffle{
     position: absolute;
     left:145px; bottom: 145px;
-    background-color: aliceblue;
+    background-color: white;
     
 }
+
+.top{
+    display: flex;
+    position: relative;
+    height: 60px; width: 90%;
+    flex-direction: row;
+    margin: 20px auto 20px auto;
+    align-items: center; justify-content: center;
+}
+
 
 .word {
     display: flex;
     height: 60px; width: fit-content;
-    margin: auto; margin-top: 30px;
+    margin: 20px auto;
     justify-content: center; align-items: center;
     padding: 10px 30px;
     font-size: 40px;
     border-radius: 60px;
     visibility: hidden;
     background-color: #AF7AC5;
+}
+
+#hint{
+    position: absolute;
+    display: flex;
+    left: 350px;
+    margin: 0px;
+    height: 50px; width: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center; justify-content: center;
+    font-weight: bold;
+    cursor :pointer;
+    user-select: none;
+    background-color: #AF7AC5;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+}
+#hint:hover{
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+    background-color: black;
+    color: white;
+}
+#hint div{
+    display: flex;
+    width :20px ;height: 30px;
+    font-size: 30px;
 }
